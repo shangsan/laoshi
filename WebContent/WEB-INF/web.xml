@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>MyWebDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- xml文件比较重要，配置文件，html -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<!-- 定位的java文件 -->
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<!-- servlet-name的value值对应servlet标记下的 servlet-name -->
+		<servlet-name>Login</servlet-name>
+		<!-- url-pattern给form表单中action属性，连连看 -->
+		<url-pattern>/Loginzwq</url-pattern>
+	</servlet-mapping>
+	<!-- 饿了 -->
+</web-app>
